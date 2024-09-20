@@ -1,0 +1,183 @@
+body{
+	background-color: #DBB4E5;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	}
+	
+header{
+	background-color: #3E1C42;
+	color: #FFFFFF;
+	font-family: Georgia, sans-serif;
+	height: 120px;
+	}
+	
+header a:link{
+	text-decoration: none;
+	color:#FFFFFF;
+	}
+
+	
+header a:visited{
+	text-decoration: none;
+	color:#FFFFFF;
+	}
+	
+header a:hover{
+	text-decoration: none;
+	color:#90C7E3;
+	}
+	
+h1{
+	font-size: 3em;
+	text-align: center;
+	letter-spacing: .25em;
+	}
+	
+nav{
+	background-color: #3E1C42;
+	font-size: 1.2em;
+	text-decoration: none;
+	float: left;
+	position: fixed;
+	width: 160px;
+	padding: 0px;
+	}
+
+nav a:link{
+	color: #FFFFFF;
+	text-decoration:none;
+	padding-left: 1em;
+	}
+	
+nav a:active{
+	color: #00EA9F;
+	text-decoration: none;
+	padding-left: 1em;
+	}
+
+nav a:hover{
+	color: #90C7E3;
+	text-decoration:none;
+	padding-left: 1em;
+	}
+	
+nav ul{
+	list-style-type: none;
+	padding-left: 1em;
+	}
+	
+	
+h2{
+	color: #1976D2;
+	font-family: Georgia, sans-serif;
+	}
+	
+dt{
+	color: #002171;
+	font-weight: bold;
+	}
+	
+.resort{
+	color: #1976D2;
+	font-size: 1.2em;
+	}
+	
+footer{
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+	}
+	
+.wrapper{
+	}
+	
+h3{
+	font-family: Georgia, sans-serif;
+	}
+	
+footer{
+	margin-left: 170px;
+	}
+	
+main{
+	margin-left: 170px;
+	overflow: auto;
+	display: block;
+	}
+	
+#logo{  
+	height: 200px;
+	
+	background-size: 100% 100%);
+	margin-left: 170px;
+	}
+	
+*{
+	box-sizing: border-box;
+	}
+	
+section{ 
+	float: left;
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+/* Mobile Responsive Design */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li img {
+        height: 100px;
+        width: 100px;
+    }
+
+    form div {
+        text-align: left;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li img {
+        height: 80px;
+        width: 80px;
+    }
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1em;
+    }
+
+    form textarea {
+        rows: 2;
+    }
+
+    form input[type="submit"] {
+        padding: 10px;
+    }
+}
+
+
+	

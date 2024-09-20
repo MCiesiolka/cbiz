@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiesiolkaBizSolutions</title>
+    <link rel="stylesheet" href="Final_CSS.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1><a href="index.html">CiesiolkaBizSolutions</a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><img src="logo.png" height="140" width="140" alt="logo"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Mission</h2>
+            <h2>Summary/Overview</h2>
+            <h3>Call to Action</h3>
+            <h3>Lead Capture</h3>
+            <p>Required fields are marked with an asterisk *</p>
+            <form method="post" action="send_mail.php">
+                <div>
+                    <label for="myFName">*First Name:</label><br>
+                    <input type="text" id="myFName" name="myFName" required>
+                </div>
+                <div>
+                    <label for="myLName">*Last Name:</label><br>
+                    <input type="text" id="myLName" name="myLName" required>
+                </div>
+                <div>
+                    <label for="myEmail">*E-mail:</label><br>
+                    <input type="email" id="myEmail" name="myEmail" required>
+                </div>
+                <div>
+                    <label for="myPhone">Phone:</label><br>
+                    <input type="tel" id="myPhone" name="myPhone">
+                </div>
+                <div>
+                    <label for="myComments">*Comments:</label><br>
+                    <textarea id="myComments" name="myComments" rows="2" cols="20" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="mySubmit" value="Submit">
+                </div>
+            </form>
+        </main>
+        <footer>
+            <a href="mailto:ciesiolkabizsolutions@gmail.com">ciesiolkabizsolutions@gmail.com</a>
+        </footer>
+    </div>
+</body>
+</html>
