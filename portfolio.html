@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CiesiolkaBizSolutions</title>
+	<meta charset="utf-8">
+	<meta name="description" content="CiesiolkaBizSolutions helps small businesses build brand recognition, grow their digital audience, and gain customers with tailored virtual assistance and web development services.">
+	<meta name="keywords" content="costum logos, small business, brand recognition, digital audience, virtual assistance, web development, custom websites, business growth, CiesiolkaBizSolutions">
+	<link rel="stylesheet" href="Final_CSS.css">
+	<style>
+        .post {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 20px; /* Add padding at the bottom */
+        }
+
+        .gallery-container {
+            margin-top: 20px; /* Add margin to the top of the gallery */
+            overflow: hidden; /* Hide overflow for scrolling */
+            border: 1px solid black; /* Border around the entire gallery */
+            padding: 10px; /* Add padding inside the border */
+        }
+
+        .gallery {
+            display: inline-flex; /* Use inline-flex to keep images in a single row */
+            animation: scroll 20s linear infinite; /* Animation for scrolling */
+        }
+
+        .gallery img {
+            margin-right: 10px; /* Space between images */
+            max-width: 200px; /* Optional: Limit the width of each image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%); /* Adjust based on total width */
+            }
+        }
+
+        .video-container {
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0; 
+            overflow: hidden; 
+            max-width: 100%;
+        }
+
+        .video-container video {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 95%;
+            height: 95%;
+        }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1><a href="contact-us.html">Our Portfolio</a></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><img src="logo.png" height="140px" width="140px" alt="logo"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="Portfolio.html" class="active">Portfolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div class="post">
+                <h3>We can create custom logos for your business!</h3>
+			<div class="video-container">
+                <video controls>
+                    <source src="logo-design.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+			</div>
+			<div class="gallery-container">
+			<div class="gallery">
+				<img src="image1.jpg" alt="Custom Logo Designs">
+				<img src="image2.jpg" alt="Custom Flyers">
+				<img src="image3.jpg" alt="Custom Flyers">
+				<img src="image4.jpg" alt="Social Media Posts">
+				<img src="image5.jpg" alt="Custom Signs Design">
+				<img src="image1.jpg" alt="Custom Logo Designs">
+				<img src="image2.jpg" alt="Custom Flyers">
+				<img src="image3.jpg" alt="Custom Flyers">
+				<img src="image4.jpg" alt="Social Media Posts">
+				<img src="image5.jpg" alt="Custom Signs Design">
+			</div>
+    </div>
+		
+		</main>
+		<footer>
+            <div class="footer-content">
+                <a href="contact-us.html" class="contact-button">Contact Us</a>
+                <a href="mailto:ciesiolkabizsolutions@gmail.com">ciesiolkabizsolutions@gmail.com</a>
+					<div class="social-media">
+					<a href="https://www.tiktok.com/@ciesiolka.biz" target="_blank">
+						<img src="tiktok.png" alt="TikTok Logo" style="width: 50px; height: 50px; margin: 5px;">
+					</a>
+					<a href="https://www.instagram.com/ciesiolka.biz/" target="_blank">
+						<img src="instagram.png" alt="Instagram Logo" style="width: 50px; height: 50px; margin: 5px;">
+					</a>
+					</div>
+			</div>
+        </footer>
+</div>
+</body>
+</html>

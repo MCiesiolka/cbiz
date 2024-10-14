@@ -1,0 +1,394 @@
+body{
+	background-color: #DBB4E5;
+	color: #666666;
+	font-family: Arial, Verdana, sans-serif;
+	padding-bottom: 5px;
+	}
+	
+header {
+    background-color: #3E1C42;
+    color: #FFFFFF;
+    font-family: Georgia, sans-serif;
+    height: 120px;
+    padding-top: 15px;
+    margin: 0;
+    padding: 15px;
+    word-wrap: break-word;
+    max-width: 100%; 
+    white-space: normal;
+}
+
+	
+header a:link{
+	text-decoration: none;
+	color:#FFFFFF;
+	}
+
+	
+header a:visited{
+	text-decoration: none;
+	color:#FFFFFF;
+	}
+	
+header a:hover{
+	text-decoration: none;
+	color:#d4d002;
+	}
+	
+h1{
+	font-size: 3em;
+	text-align: center;
+	letter-spacing: .25em;
+	}
+	
+nav {
+    background-color: #3E1C42;
+    font-size: 1.2em;
+    text-decoration: none;
+    float: left;
+    position: fixed;
+    width: 160px;
+    padding: 0px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block; 
+    padding: 5px;
+}
+
+nav a.active {
+    color: #d4d002;
+}
+
+nav a:hover {
+    color: #05edca;
+}
+	
+nav ul{
+	list-style-type: none;
+	padding-left: 1em;
+	}
+	
+h2{
+	color: #000000;
+	font-family: Georgia, sans-serif;
+	}
+	
+.tiktok-link {
+    color: #000000;
+}
+
+.instagram-link {
+    color: #000000;
+}
+
+	
+dt{
+	color: #002171;
+	font-weight: bold;
+	}
+	
+.resort{
+	color: #1976D2;
+	font-size: 1.2em;
+	}
+	
+footer{
+	font-size: .9em;
+	font-style: bold;
+	text-align: center;
+	padding: 1em;
+	}
+	
+.contact-button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #3E1C42;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.contact-button:hover {
+    background-color: #d4d002;
+}
+
+	
+.wrapper{
+	}
+	
+h3{
+	font-family: Georgia, sans-serif;
+	color: #3E1C42;
+	}
+	
+p{
+	font-family: Georgia, sans-serif;
+	color: #3E1C42;
+	}
+	
+footer{
+	margin-left: 170px;
+	padding: 20px 0;
+	}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}	
+	
+main{
+	margin-left: 170px;
+	overflow: auto;
+	display: block;
+	}
+	
+#logo{  
+	height: 200px;
+	background-size: 100% 100%);
+	margin-left: 170px;
+	}
+	
+*{
+	box-sizing: border-box;
+	}
+	
+section{ 
+	float: left;
+	width: 33%;
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+
+/* Mobile Responsive Design */
+@media only screen and (max-width: 900px) {
+    .wrapper {
+        padding: 0px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+		padding-top: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li img {
+        height: 100px;
+        width: 100px;
+    }
+
+    form div {
+        text-align: left;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li img {
+        height: 80px;
+        width: 80px;
+    }
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+    h2, h3 {
+        font-size: 1em;
+    }
+
+    form textarea {
+        rows: 2;
+    }
+
+    form input[type="submit"] {
+        padding: 10px;
+    }
+}
+/* Locks the width on desktop mode */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #DBB4E5;
+    color: #666666;
+}
+
+.container {
+    max-width: 100%; /* Set the fixed width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 10px; /* Add some padding for spacing */
+    background-color: #fff;
+}
+
+/* Add some media query to adjust the layout for mobile devices */
+@media only screen and (max-width: 900px) {
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+}
+
+.post {
+    background-color: ffffff; /* White background */
+    border: 2px solid black; /* Black outline */
+    padding: 15px; /* Space inside the box */
+    margin: 10px 0; /* Space outside the box */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiesiolkaBizSolutions</title>
+    <link rel="stylesheet" href="Final_CSS.css">
+</head>
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Limit form width for better appearance */
+    margin: 0 auto; /* Center the form */
+}
+
+label, input, textarea {
+    margin-bottom: 10px; /* Spacing between fields */
+}
+
+input, textarea {
+    padding: 10px; /* Add padding inside the input fields */
+    font-size: 1em; /* Set a readable font size */
+    border: 1px solid #ccc; /* Light border for the input fields */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Make input fields fill the form width */
+}
+
+input[type="submit"] {
+    background-color: #05edca; /* Button background color */
+    color: white; /* Text color for button */
+    cursor: pointer; /* Pointer on hover */
+    border: none; /* Remove default border */
+    padding: 15px; /* Add padding inside the button */
+}
+
+input[type="submit"]:hover {
+    background-color: #04c8a5; /* Darker color on hover */
+}
+
+/* Arrow Container - Positioned on the right side of the screen */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    animation: slideInWithArrow 2s ease-out forwards;
+    opacity: 0;
+}
+
+/* Arrow head (pointing left) */
+.arrow-head {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 20px solid red; /* Arrowhead pointing left */
+}
+
+/* Arrow body (tail) - horizontal line */
+.arrow-body {
+    width: 50px;
+    height: 5px;
+    background-color: red;
+}
+
+/* Animation for the arrow */
+@keyframes slideInWithArrow {
+    0% {
+        transform: translateX(150px); /* Start off-screen */
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0); /* End position */
+        opacity: 1;
+    }
+}
+
+.gallery-container {
+    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Set the width of the gallery */
+}
+
+.gallery {
+    display: flex; /* Use flexbox to arrange images in a row */
+    animation: scroll 20s linear infinite; /* Animation */
+}
+
+.gallery img {
+    width: auto; /* Make images responsive */
+    height: 200px; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left */
+    }
+}
+
+/* Pause the animation on hover */
+.gallery-container:hover .gallery {
+    animation-play-state: paused; /* Pause the animation */
+}
+/* Centered image styles */
+.centered-image {
+    text-align: center; /* Center the content */
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.centered-image img {
+    max-width: 100%; /* Make sure it fits the screen */
+    height: auto; /* Maintain aspect ratio */
+}
+
