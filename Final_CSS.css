@@ -108,7 +108,7 @@ dt{
 	
 footer{
 	font-size: .9em;
-	font-style: bold;
+	font-weight: bold;
 	text-align: center;
 	padding: 1em;
 	}
@@ -165,7 +165,7 @@ main{
 	
 #logo{  
 	height: 200px;
-	background-size: 100% 100%);
+	background-size: 100% 100%;
 	margin-left: 170px;
 	}
 	
@@ -228,9 +228,6 @@ section{
         font-size: 1em;
     }
 
-    form textarea {
-        rows: 2;
-    }
 
     form input[type="submit"] {
         padding: 10px;
@@ -246,13 +243,12 @@ body {
 }
 
 .container {
-    max-width: 100%; /* Set the fixed width for the content */
-    margin: 0 auto; /* Center the content */
-    padding: 10px; /* Add some padding for spacing */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
     background-color: #fff;
 }
 
-/* Add some media query to adjust the layout for mobile devices */
 @media only screen and (max-width: 900px) {
     .container {
         max-width: 95%;
@@ -261,53 +257,47 @@ body {
 }
 
 .post {
-    background-color: ffffff; /* White background */
-    border: 2px solid black; /* Black outline */
-    padding: 15px; /* Space inside the box */
-    margin: 10px 0; /* Space outside the box */
-    border-radius: 5px; /* Slightly rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds some shadow for depth */
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CiesiolkaBizSolutions</title>
-    <link rel="stylesheet" href="Final_CSS.css">
-</head>
 
 form {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width of the container */
-    max-width: 500px; /* Limit form width for better appearance */
-    margin: 0 auto; /* Center the form */
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 label, input, textarea {
-    margin-bottom: 10px; /* Spacing between fields */
+    margin-bottom: 10px;
 }
 
 input, textarea {
-    padding: 10px; /* Add padding inside the input fields */
-    font-size: 1em; /* Set a readable font size */
-    border: 1px solid #ccc; /* Light border for the input fields */
-    border-radius: 5px; /* Rounded corners */
-    width: 100%; /* Make input fields fill the form width */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 
 input[type="submit"] {
-    background-color: #05edca; /* Button background color */
-    color: white; /* Text color for button */
-    cursor: pointer; /* Pointer on hover */
-    border: none; /* Remove default border */
-    padding: 15px; /* Add padding inside the button */
+    background-color: #05edca;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
 }
 
 input[type="submit"]:hover {
-    background-color: #04c8a5; /* Darker color on hover */
+    background-color: #04c8a5;
 }
 
-/* Arrow Container - Positioned on the right side of the screen */
+
 .arrow-container {
     position: absolute;
     top: 50%;
@@ -320,51 +310,51 @@ input[type="submit"]:hover {
     opacity: 0;
 }
 
-/* Arrow head (pointing left) */
+
 .arrow-head {
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 20px solid red; /* Arrowhead pointing left */
+    border-right: 20px solid red;
 }
 
-/* Arrow body (tail) - horizontal line */
+
 .arrow-body {
     width: 50px;
     height: 5px;
     background-color: red;
 }
 
-/* Animation for the arrow */
+
 @keyframes slideInWithArrow {
     0% {
-        transform: translateX(150px); /* Start off-screen */
+        transform: translateX(150px);
         opacity: 0;
     }
     50% {
         opacity: 1;
     }
     100% {
-        transform: translateX(0); /* End position */
+        transform: translateX(0);
         opacity: 1;
     }
 }
 
 .gallery-container {
-    overflow: hidden; /* Hide overflow */
-    width: 100%; /* Set the width of the gallery */
+    overflow: hidden;
+    width: 100%;
 }
 
 .gallery {
-    display: flex; /* Use flexbox to arrange images in a row */
-    animation: scroll 20s linear infinite; /* Animation */
+    display: flex;
+    animation: scroll 20s linear infinite;
 }
 
 .gallery img {
-    width: auto; /* Make images responsive */
-    height: 200px; /* Maintain aspect ratio */
-    flex-shrink: 0; /* Prevent images from shrinking */
+    width: auto;
+    height: 200px;
+    flex-shrink: 0;
 }
 
 @keyframes scroll {
@@ -372,23 +362,67 @@ input[type="submit"]:hover {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Move to the left */
+        transform: translateX(-50%);
     }
 }
 
-/* Pause the animation on hover */
+
 .gallery-container:hover .gallery {
-    animation-play-state: paused; /* Pause the animation */
+    animation-play-state: paused;
 }
-/* Centered image styles */
+
 .centered-image {
-    text-align: center; /* Center the content */
+    text-align: center;
     margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .centered-image img {
-    max-width: 100%; /* Make sure it fits the screen */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
+/* Make tables responsive */
+table {
+    width: 80%;
+    max-width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2pt solid #afeff0;
+    text-align: center;
+    display: block; /* Enables scrolling */
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #afeff0; /* Adds visible gridlines */
+    text-align: center;
+    word-wrap: break-word; /* Ensures long words or links break onto the next line */
+}
+
+th {
+    background-color: #3E1C42;
+    color: white;
+    border-bottom: 2pt solid #afeff0;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+table {
+    width: 80%;
+    max-width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2pt solid #afeff0;
+    text-align: center;
+    word-wrap: break-word; /* Ensures text wraps within cells */
+    word-break: break-all; 
+    display: block; /* Enables scrolling */
+}
