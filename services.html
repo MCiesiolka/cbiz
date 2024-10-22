@@ -1,167 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CiesiolkaBizSolutions</title>
-	<meta charset="utf-8">
-	<meta name="description" content="CiesiolkaBizSolutions helps small businesses build brand recognition, grow their digital audience, and gain customers with tailored virtual assistance and web development services.">
-	<meta name="keywords" content="small business, brand recognition, digital audience, virtual assistance, web development, custom websites, business growth, CiesiolkaBizSolutions">
-	<link rel="stylesheet" href="Final_CSS.css">
-	<style>
-         table {
-            width: 80%;
-            max-width: 800px;
-            margin: 20px auto;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table - Fit to Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensures no horizontal overflow */
+        }
+
+        table {
             border-collapse: collapse;
-            background-color: white;
-            border: 2pt solid #afeff0;
-			text-align:center;
-			padding: 20px;
+            table-layout: auto;
+            width: 100%;
+            max-width: 100%; /* Ensures table does not exceed container width */
+            transform-origin: top left;
         }
+
         th, td {
-            padding: 15px;
+            padding: 12px;
             text-align: left;
-            border: 1px solid #afeff0; /* Adds visible gridlines */
-			text-align:center;
+            border: 1px solid #ddd;
+            word-wrap: break-word; /* Ensure text wraps */
+            word-break: break-all;  /* Break long words */
         }
-        th {
-            background-color: #3E1C42;
-            color: white;
-            border-bottom: 2pt solid #afeff0;
-			text-align:center;
+
+        /* Scaling the table to always fit the screen size */
+        .table-container {
+            transform: scale(1); /* Default scale for larger screens */
         }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-			text-align:center;
+
+        @media (max-width: 1200px) {
+            .table-container {
+                transform: scale(0.9); /* Shrink the table for medium screens */
+            }
         }
-	</style>
+
+        @media (max-width: 800px) {
+            .table-container {
+                transform: scale(0.8); /* Further shrink for smaller screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .table-container {
+                transform: scale(0.7); /* Shrink more for mobile devices */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .table-container {
+                transform: scale(0.6); /* Maximum shrink for small mobile screens */
+            }
+        }
+
+    </style>
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<h1><a href="contact-us.html">Our Services</a></h1>
-		</header>
-		<nav>
-			<ul>
-				<li><img src="logo.png" height="140px" width="140px" alt="logo"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="services.html" class="active">Services</a></li>
-				<li><a href="Portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact-us.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<main>
 
-	<table>
-    <thead>
-        <tr>
-            <th>Website Design Services</th>
-            <th>Service Level</th>
-            <th>Pages Included</th>
-            <th>Features</th>
-            <th>Price of Site Design</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="3">Site Design</td>
-            <td>Basic Plan</td>
-            <td>3 Pages</td>
-            <td>- Simple styles for HOME, ABOUT/SERVICES, and CONTACT pages<br>
-                - Displays info and links<br>
-                - No form
-            </td>
-            <td>$300</td>
-        </tr>
-        <tr>
-            <td>Standard Plan</td>
-            <td>Up to 5 Pages</td>
-            <td>- Includes all Basic Plan features<br>
-                - CONTACT page with form to collect info<br>
-                - BLOG page
-            </td>
-            <td>$500</td>
-        </tr>
-        <tr>
-            <td>Premium Plan</td>
-            <td>Up to 6 Pages</td>
-            <td>- Includes all Standard Plan features<br>
-                - Custom media displays<br>
-                - Interactive layouts<br>
-                - Premium features like carousels and gallery displays
-            </td>
-            <td>$750</td>
-        </tr>
-        <tr>
-            <td>Monthly Site Management</td>
-            <td colspan="3">After your website has been designed and launched, we offer Management Services as an additional monthly package. You get 4 hours a month for us to make any updates or site fixes that are needed.</td>
-            <td>$50 / Month</td>
-        </tr>
-        <tr>
-            <td>Monthly Social Media Management</td>
-            <td colspan="3">We will post to your Socials 2 times a week, write a monthly Blog post, and create/edit photos for your content.</td>
-            <td>$250 / Month</td>
-        </tr>
-        <tr>
-            <td>Media Designs</td>
-            <td colspan="3">We can bring your ideas to life with our Design Services. From Social Posts Content to Flyers and Signs, and more!</td>
-            <td>**Priced on per project basis**</td>
-        </tr>
-		<tr>
-            <th colspan="5">**We do not provide domain names. Client is responsible for providing any custom domains to use for the site. We can assist in this process for a fee of $50, separate from other related costs.**</th>
-        </tr>
-    </tbody>
-</table>
-
-<table>
+<div class="table-container">
+    <table>
         <thead>
             <tr>
-                <th>Social Media Management</th>
-                <th>Media Design Services</th>
+                <th>Service</th>
+                <th>Description</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Local ads and events</td>
-                <td>Signs</td>
-            </tr>
-            <tr>
-                <td>Local groups & marketplace</td>
-                <td>Flyers</td>
-            </tr>
-            <tr>
-                <td>Websites</td>
-                <td>Social Media Posts</td>
+                <td>Local Ads</td>
+                <td>Boost your business visibility through targeted local ads. These can be optimized based on demographics, interests, and location to increase engagement.</td>
             </tr>
             <tr>
                 <td>SEO</td>
-                <td>Logo creation</td>
+                <td>Improve search engine ranking to help your business reach more customers through organic search results.</td>
             </tr>
-            <tr>
-                <td>Email List- Build & Marketing</td>
-                <td>Business Card Design</td>
-            </tr>
-            <tr>
-                <td>Secondary phone number</td>
-                <td></td>
-            </tr>
+            <!-- Add more rows as needed -->
         </tbody>
     </table>
-		</main>
-		<footer>
-            <div class="footer-content">
-                <a href="contact-us.html" class="contact-button">Contact Us</a>
-                <a href="mailto:ciesiolkabizsolutions@gmail.com">ciesiolkabizsolutions@gmail.com</a>
-					<div class="social-media">
-						<a href="https://www.tiktok.com/@ciesiolka.biz" target="_blank">
-						<img src="tiktok.png" alt="TikTok Logo" style="width: 50px; height: 50px; margin: 5px;">
-						</a>
-						<a href="https://www.instagram.com/ciesiolka.biz/" target="_blank">
-						<img src="instagram.png" alt="Instagram Logo" style="width: 50px; height: 50px; margin: 5px;">
-						</a>
-					</div>
-			</div>
-		</footer>
 </div>
+
 </body>
 </html>
