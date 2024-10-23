@@ -398,7 +398,6 @@ th, td {
     padding: 15px;
     border: 1px solid #afeff0; /* Adds visible gridlines */
     text-align: center;
-    word-wrap: break-word; /* Ensures long words or links break onto the next line */
 }
 
 th {
@@ -416,13 +415,11 @@ tr:nth-child(even) {
 /* Responsive adjustments */
 @media only screen and (max-width: 900px) {
 table {
-    width: 80%;
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     background-color: white;
     border: 2pt solid #afeff0;
-    text-align: center;
-    word-wrap: break-word; /* Ensures text wraps within cells */
-    word-break: break-all; 
+    text-align: center; 
     display: block; /* Enables scrolling */
 }
