@@ -23,16 +23,16 @@
 			overflow-y: auto;
 		}
 
-        .post {
-            margin-bottom: 15px;
-            border: 1px solid #000;
-            background-color: #fff;
-            border-radius: 4px;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            height: 20%;
-            box-sizing: border-box;
+      .post {
+            background-color: white;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .post-content {
@@ -62,6 +62,48 @@
         .post:last-child {
             border-bottom: none;
         }
+		.gallery-container {
+            margin-top: 20px; /* Add margin to the top of the gallery */
+            overflow: hidden; /* Hide overflow for scrolling */
+            border: 1px solid black; /* Border around the entire gallery */
+            padding: 10px; /* Add padding inside the border */
+        }
+
+        .gallery {
+            display: inline-flex; /* Use inline-flex to keep images in a single row */
+            animation: scroll 20s linear infinite; /* Animation for scrolling */
+        }
+
+        .gallery img {
+            margin-right: 10px; /* Space between images */
+            max-width: 40%; /* Optional: Limit the width of each image */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%); /* Adjust based on total width */
+            }
+        }
+
+        .video-container {
+            position: relative; 
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0; 
+            overflow: hidden; 
+            max-width: 100%;
+        }
+
+        .video-container video {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +127,23 @@
             <p>We know that family is important. We started our business to allow us the flexibility of earning an income to support our family without having to leave our home.</p>
             <p>Our goal is to aid other business owners and help them grow their brand and clientele reach.</p>
 
-        <div class="social-feed">
+<h3> Recent Posts:</h3>
+<p></p>
+<div class="gallery-container">
+	<div class="gallery">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid02Jbajmxeqhw1SfQ8m2VMNsRBk11D4aGyjjKJpbnep5aS942VMyDEECxnf92xp1eSNl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid0232JgbhEuALdMJKhs7sB3dgtz6CbeP5Nht8avN39UasJAmGM5pPQVcQ33YBacSsqpl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid02oAX1gqVUvw1R2YjeJH7ZgSjhNQGLesUvuXpHhVuh44njgCankxKYjZXPswfueBcyl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid0H3Nm3n9AJZseigjVpScTYRGyCxDTaLJxsrQ3AUfCaykHdpUFgEXGwiGSbEWKTkGCl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid02Jbajmxeqhw1SfQ8m2VMNsRBk11D4aGyjjKJpbnep5aS942VMyDEECxnf92xp1eSNl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid0232JgbhEuALdMJKhs7sB3dgtz6CbeP5Nht8avN39UasJAmGM5pPQVcQ33YBacSsqpl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid02oAX1gqVUvw1R2YjeJH7ZgSjhNQGLesUvuXpHhVuh44njgCankxKYjZXPswfueBcyl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fciesiolka.biz%2Fposts%2Fpfbid0H3Nm3n9AJZseigjVpScTYRGyCxDTaLJxsrQ3AUfCaykHdpUFgEXGwiGSbEWKTkGCl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	
+	</div>
+</div>
+		
+		<div class="social-feed">
 			<h2 style="color: white;">Comments:</h2>
 
 			<div class="post">
