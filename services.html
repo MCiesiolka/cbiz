@@ -13,7 +13,7 @@
         }
 
         .table-container {
-            width: 50%; /* Make it 90% of the viewport width */
+            width: 90%; /* Make it 90% of the viewport width */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,30 +34,7 @@
 			white-space: normal; /* Ensure long words wrap to the next line instead of breaking */
 		}
 
-        /* Responsiveness */
-        @media (max-width: 1200px) {
-            .table-container {
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 800px) {
-            .table-container {
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .table-container {
-                width: 90%;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .table-container {
-                width: 90%;
-            }
-        }
+        
 	.contact-button {
 		display: inline-block;
 		background-color: #3E1C42;
@@ -74,17 +51,19 @@
 		max-width: 100%;           /* Allows responsive behavior */
 		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 	}
-	.ram-upgrade-box {
-            background-color: white;
-            border: 2px solid black;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }	
+	.post {
+		background-color: white;
+		border: 2px solid black;
+		padding: 15px;
+		margin: 10px 0;
+		border-radius: 5px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	
     </style>
  
 </head>
@@ -143,8 +122,8 @@
 </table>
 </div>
 
-<section class="service-box">
-    <div class="ram-upgrade-box">
+
+    <div class="post">
 	  <h2>💻 RAM Upgrade Services</h2>
 	  <p>Is your computer running slow? A RAM upgrade can dramatically improve your device's speed and performance. We work on both desktops and laptops!</p>
 	  
@@ -169,7 +148,7 @@
 				<a href="contact-us.html" class="contact-button">Book Consultation</a>
 			</div>
 	</div>
-</section>
+
   
 	
 		</main>
